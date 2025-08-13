@@ -107,10 +107,18 @@ const Layout = ({ children }: LayoutProps) => {
       </main>
 
       {/* Footer */}
-      <footer className="border-t border-border bg-muted/20 mt-auto">
-        <div className="container mx-auto px-4 py-6 text-center text-sm text-muted-foreground">
-          <p>&copy; 2024 SFC Digital Library System. Built for the Sixth Form Committee.</p>
-          <p className="mt-1">Need help? Contact the library team or your IT administrator.</p>
+      <footer style={{ background: 'var(--gradient-footer)' }} className="text-white mt-auto">
+        <div className="container mx-auto px-4 py-6">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <div className="text-center md:text-left">
+              <h3 className="font-semibold text-lg">SFC Digital Library</h3>
+              <p className="text-sm opacity-90">Empowering academic excellence through accessible resources</p>
+            </div>
+            <div className="text-center md:text-right">
+              <p className="text-sm opacity-90">&copy; 2024 Sixth Form Committee</p>
+              <p className="text-xs opacity-75">Built for educational excellence</p>
+            </div>
+          </div>
         </div>
       </footer>
     </div>

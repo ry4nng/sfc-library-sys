@@ -24,6 +24,7 @@ export default {
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
+				surface: '#FAFAFA',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))',
@@ -36,6 +37,19 @@ export default {
 					hover: 'hsl(var(--secondary-hover))',
 					light: 'hsl(var(--secondary-light))'
 				},
+				ktjmaroon: {
+					50: '#FBECEC',
+					100: '#F5D5D5',
+					200: '#E9AFAF',
+					300: '#DC8989',
+					400: '#CF6363',
+					500: '#C33B3B',
+					600: '#A83232',
+					700: '#7A1E1E',
+					800: '#5A1212',
+					900: '#3D0C0C'
+				},
+				ktjred: '#C33B3B',
 				destructive: {
 					DEFAULT: 'hsl(var(--destructive))',
 					foreground: 'hsl(var(--destructive-foreground))'

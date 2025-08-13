@@ -16,8 +16,10 @@ import {
   Upload,
   Eye,
   Edit,
-  Trash2
+  Trash2,
+  Database
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const AdminDashboard = () => {
   const [selectedTab, setSelectedTab] = useState("overview");
@@ -399,6 +401,36 @@ const AdminDashboard = () => {
           </Card>
         </TabsContent>
       </Tabs>
+
+      {/* Quick Actions */}
+      <Card>
+        <CardHeader>
+          <CardTitle>Quick Actions</CardTitle>
+          <CardDescription>Frequently used admin functions</CardDescription>
+        </CardHeader>
+        <CardContent>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <Button variant="outline" className="h-20 flex-col">
+              <Settings className="h-6 w-6 mb-2" />
+              System Settings
+            </Button>
+            <Link to="/admin/integrations">
+              <Button variant="outline" className="h-20 flex-col w-full">
+                <Database className="h-6 w-6 mb-2" />
+                Integrations
+              </Button>
+            </Link>
+            <Button variant="outline" className="h-20 flex-col">
+              <Download className="h-6 w-6 mb-2" />
+              Export Data
+            </Button>
+            <Button variant="outline" className="h-20 flex-col">
+              <Plus className="h-6 w-6 mb-2" />
+              Add New Book
+            </Button>
+          </div>
+        </CardContent>
+      </Card>
     </div>
   );
 };

@@ -6,27 +6,27 @@
 
 @layer base {
   :root {
-    /* Academic Library Color Palette */
-    --background: 247 250 252;
-    --foreground: 215 25% 15%;
+    /* KTJ SFC Library Color Palette */
+    --background: 0 0% 100%;
+    --foreground: 213 20% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 215 25% 15%;
+    --card-foreground: 213 20% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 215 25% 15%;
+    --popover-foreground: 213 20% 15%;
 
-    /* Academic Blue Primary */
-    --primary: 220 86% 25%;
+    /* KTJ Maroon Primary */
+    --primary: 0 73% 30%;
     --primary-foreground: 0 0% 98%;
-    --primary-hover: 220 86% 30%;
-    --primary-light: 220 86% 90%;
+    --primary-hover: 0 73% 35%;
+    --primary-light: 0 73% 92%;
 
-    /* Warm Gold Secondary */
-    --secondary: 45 96% 53%;
-    --secondary-foreground: 215 25% 15%;
-    --secondary-hover: 45 96% 48%;
-    --secondary-light: 45 96% 95%;
+    /* KTJ Red Secondary */
+    --secondary: 0 62% 49%;
+    --secondary-foreground: 0 0% 98%;
+    --secondary-hover: 0 62% 44%;
+    --secondary-light: 0 62% 95%;
 
     /* Library Status Colors */
     --available: 142 71% 45%;
@@ -36,26 +36,27 @@
     --overdue: 0 84% 60%;
     --overdue-foreground: 0 0% 98%;
 
-    --muted: 220 13% 91%;
+    --muted: 215 18% 64%;
     --muted-foreground: 215 16% 47%;
 
-    --accent: 220 13% 91%;
-    --accent-foreground: 215 25% 15%;
+    --accent: 210 17% 90%;
+    --accent-foreground: 213 20% 15%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 220 13% 88%;
-    --input: 220 13% 88%;
-    --ring: 220 86% 25%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 0 73% 30%;
 
     --radius: 0.75rem;
 
-    /* Library-specific Design Tokens */
-    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-hover)));
-    --gradient-card: linear-gradient(180deg, hsl(var(--card)), hsl(var(--muted) / 0.3));
-    --shadow-card: 0 4px 6px -1px hsl(var(--primary) / 0.1);
-    --shadow-elevated: 0 10px 25px -3px hsl(var(--primary) / 0.15);
+    /* KTJ Library Design Tokens */
+    --gradient-hero: linear-gradient(135deg, #7A1E1E, #A33A3A);
+    --gradient-footer: linear-gradient(45deg, #5A1212, #7A1E1E, #A33A3A);
+    --gradient-card: linear-gradient(180deg, hsl(var(--card)), hsl(var(--muted) / 0.1));
+    --shadow-card: 0 4px 6px -1px rgba(122, 30, 30, 0.1);
+    --shadow-elevated: 0 10px 25px -3px rgba(122, 30, 30, 0.15);
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     /* Library System Transition Effects */
@@ -63,27 +64,27 @@
   }
 
   .dark {
-    /* Dark Mode Library Colors */
-    --background: 220 26% 8%;
-    --foreground: 220 10% 95%;
+    /* Dark Mode KTJ Library Colors */
+    --background: 213 30% 8%;
+    --foreground: 210 15% 95%;
 
-    --card: 220 26% 10%;
-    --card-foreground: 220 10% 95%;
+    --card: 213 30% 10%;
+    --card-foreground: 210 15% 95%;
 
-    --popover: 220 26% 10%;
-    --popover-foreground: 220 10% 95%;
+    --popover: 213 30% 10%;
+    --popover-foreground: 210 15% 95%;
 
-    /* Academic Blue in Dark Mode */
-    --primary: 220 86% 65%;
-    --primary-foreground: 220 26% 8%;
-    --primary-hover: 220 86% 70%;
-    --primary-light: 220 86% 20%;
+    /* KTJ Maroon in Dark Mode */
+    --primary: 0 73% 65%;
+    --primary-foreground: 213 30% 8%;
+    --primary-hover: 0 73% 70%;
+    --primary-light: 0 73% 20%;
 
-    /* Warm Gold in Dark Mode */
-    --secondary: 45 96% 60%;
-    --secondary-foreground: 220 26% 8%;
-    --secondary-hover: 45 96% 55%;
-    --secondary-light: 45 96% 15%;
+    /* KTJ Red in Dark Mode */
+    --secondary: 0 62% 65%;
+    --secondary-foreground: 213 30% 8%;
+    --secondary-hover: 0 62% 60%;
+    --secondary-light: 0 62% 20%;
 
     /* Library Status Colors - Dark Mode */
     --available: 142 71% 55%;
@@ -93,21 +94,22 @@
     --overdue: 0 84% 70%;
     --overdue-foreground: 220 26% 8%;
 
-    --muted: 220 13% 15%;
-    --muted-foreground: 220 10% 65%;
+    --muted: 213 15% 15%;
+    --muted-foreground: 210 10% 65%;
 
-    --accent: 220 13% 15%;
-    --accent-foreground: 220 10% 95%;
+    --accent: 213 15% 15%;
+    --accent-foreground: 210 15% 95%;
 
     --destructive: 0 84% 70%;
-    --destructive-foreground: 220 26% 8%;
+    --destructive-foreground: 213 30% 8%;
 
-    --border: 220 13% 18%;
-    --input: 220 13% 18%;
-    --ring: 220 86% 65%;
+    --border: 213 15% 18%;
+    --input: 213 15% 18%;
+    --ring: 0 73% 65%;
 
     /* Dark Mode Design Tokens */
-    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-hover)));
+    --gradient-hero: linear-gradient(135deg, #C33B3B, #DC8989);
+    --gradient-footer: linear-gradient(45deg, #3D0C0C, #5A1212, #7A1E1E);
     --gradient-card: linear-gradient(180deg, hsl(var(--card)), hsl(var(--muted) / 0.3));
     --shadow-card: 0 4px 6px -1px hsl(0 0% 0% / 0.3);
     --shadow-elevated: 0 10px 25px -3px hsl(0 0% 0% / 0.4);

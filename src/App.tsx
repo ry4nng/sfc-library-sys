@@ -9,6 +9,7 @@ import BorrowBook from "./pages/BorrowBook";
 import ReturnBook from "./pages/ReturnBook";
 import LoanHistory from "./pages/LoanHistory";
 import AdminDashboard from "./pages/AdminDashboard";
+import AdminIntegrations from "./pages/AdminIntegrations";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -26,6 +27,7 @@ const App = () => (
             <Route path="/return" element={<ReturnBook />} />
             <Route path="/history" element={<LoanHistory />} />
             <Route path="/admin" element={<AdminDashboard />} />
+            <Route path="/admin/integrations" element={<AdminIntegrations />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
