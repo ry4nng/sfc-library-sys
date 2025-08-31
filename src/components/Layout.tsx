@@ -17,6 +17,7 @@ const Layout = ({ children }: LayoutProps) => {
 
   const navigationItems = [
     { to: "/", icon: Home, label: "Home", roles: ["student", "librarian", "admin"] },
+    { to: "/browse", icon: BookMarked, label: "Browse Books", roles: ["student", "librarian", "admin"] },
     { to: "/borrow", icon: ScanLine, label: "Borrow Book", roles: ["student", "librarian", "admin"] },
     { to: "/return", icon: RotateCcw, label: "Return Book", roles: ["student", "librarian", "admin"] },
     { to: "/history", icon: History, label: "My History", roles: ["student", "librarian", "admin"] },

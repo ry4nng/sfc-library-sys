@@ -5,10 +5,12 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
 import Home from "./pages/Home";
+import BrowseBooks from "./pages/BrowseBooks";
 import BorrowBook from "./pages/BorrowBook";
 import ReturnBook from "./pages/ReturnBook";
 import LoanHistory from "./pages/LoanHistory";
 import AdminDashboard from "./pages/AdminDashboard";
+import AdminBooks from "./pages/AdminBooks";
 import AdminIntegrations from "./pages/AdminIntegrations";
 import NotFound from "./pages/NotFound";
 
@@ -23,11 +25,13 @@ const App = () => (
         <Layout>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/borrow" element={<BorrowBook />} />
-            <Route path="/return" element={<ReturnBook />} />
-            <Route path="/history" element={<LoanHistory />} />
-            <Route path="/admin" element={<AdminDashboard />} />
-            <Route path="/admin/integrations" element={<AdminIntegrations />} />
+          <Route path="/browse" element={<BrowseBooks />} />
+          <Route path="/borrow" element={<BorrowBook />} />
+          <Route path="/return" element={<ReturnBook />} />
+          <Route path="/history" element={<LoanHistory />} />
+          <Route path="/admin" element={<AdminDashboard />} />
+          <Route path="/admin/books" element={<AdminBooks />} />
+          <Route path="/admin/integrations" element={<AdminIntegrations />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
